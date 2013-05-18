@@ -26,7 +26,12 @@
 #import "PSSwipeNavigationView.h"
 #import "PSSwipeNavigationDelegate.h"
 
-static const NSInteger kScreenShotTag = 1001;
+static const float kAnimationDuration = 0.3f;
+
+typedef enum {
+    RotationDirectionLeft,
+    RotationDirectionRight
+} RotationDirection;
 
 @interface PSSwipeNavigationView ()
 
@@ -261,6 +266,9 @@ static const NSInteger kScreenShotTag = 1001;
             // Force enter of navigation mode
             [self handleTwoFingerVerticalSwipeGesture:self.twoFingerVerticalSwipeRecognizer];
             
+            UIView *screenShot = (UIView*)[self.screenShots objectAtIndex:self.currentPageIndex];
+            [self rotateView:screenShot direction:RotationDirectionLeft];
+            
             // Scroll to next page
             CGPoint targetContentOffset = CGPointMake(self.contentView.contentOffset.x + self.pageWidth, 0);
             [self snapToNearestPage:targetContentOffset];
@@ -272,11 +280,38 @@ static const NSInteger kScreenShotTag = 1001;
             // Force enter of navigation mode
             [self handleTwoFingerVerticalSwipeGesture:self.twoFingerVerticalSwipeRecognizer];
             
+            UIView *screenShot = (UIView*)[self.screenShots objectAtIndex:self.currentPageIndex];
+            [self rotateView:screenShot direction:RotationDirectionRight];
+            
             // Scroll to next page
             CGPoint targetContentOffset = CGPointMake(self.contentView.contentOffset.x - self.pageWidth, 0);
             [self snapToNearestPage:targetContentOffset];
         }
     }
+}
+
+- (void)rotateView:(UIView*)view direction:(RotationDirection)direction {
+    CGFloat angle = direction == RotationDirectionLeft ? M_PI : -M_PI;
+    
+    CAKeyframeAnimation *theAnimation = [CAKeyframeAnimation animation];
+    theAnimation.values = [NSArray arrayWithObjects:
+                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation(0, 0,1,0)],
+                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation(angle, 0,1,0)],
+                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation(angle * 2, 0,1,0)],
+                           nil];
+    
+    theAnimation.cumulative = YES;
+    theAnimation.duration = kAnimationDuration;
+    theAnimation.repeatCount = 0;
+    theAnimation.removedOnCompletion = YES;
+    
+    
+    theAnimation.timingFunctions = [NSArray arrayWithObjects:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],
+                                    [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut],
+                                    nil
+                                    ];
+    
+    [view.layer addAnimation:theAnimation forKey:@"transform"];
 }
 
 
@@ -422,7 +457,7 @@ static const NSInteger kScreenShotTag = 1001;
         UIView *screenShot = (UIView*)[self.screenShots objectAtIndex:i];
         
         // Minimize every screen shot
-        [UIView animateWithDuration:0.3 animations:^ {
+        [UIView animateWithDuration:kAnimationDuration animations:^ {
             screenShot.frame = CGRectMake(i*self.pageWidth + self.marginX + (self.pageMargin / 2), self.marginY, self.pageWidth - self.pageMargin, self.minimizedPageHeight);
         }];
     }
@@ -448,7 +483,7 @@ static const NSInteger kScreenShotTag = 1001;
     [self.contentView bringSubviewToFront:screenShotOfCurrentView];
     
     // Maximize the current page
-    [UIView animateWithDuration:0.3
+    [UIView animateWithDuration:kAnimationDuration
                      animations:^ {
                          // Maximize the screen shot
                          screenShotOfCurrentView.frame = CGRectMake(self.contentView.contentOffset.x, 0, self.contentView.frame.size.width, self.contentView.frame.size.height);
@@ -473,7 +508,6 @@ static const NSInteger kScreenShotTag = 1001;
     [page.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImageView *screenShotView = [[[UIImageView alloc] initWithImage:UIGraphicsGetImageFromCurrentImageContext()] autorelease];
     screenShotView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    screenShotView.tag = kScreenShotTag;
     
     return screenShotView;
 }
