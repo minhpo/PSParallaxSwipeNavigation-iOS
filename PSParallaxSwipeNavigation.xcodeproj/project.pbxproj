@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2225DB73174773A8002FA1D7 /* PSSwipeNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2225DB72174773A8002FA1D7 /* PSSwipeNavigationView.xib */; };
+		2225DB76174781C1002FA1D7 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2225DB75174781C1002FA1D7 /* TestTableViewController.m */; };
+		2225DB78174781DD002FA1D7 /* TestTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2225DB77174781DD002FA1D7 /* TestTableView.xib */; };
+		2225DB7B1747854B002FA1D7 /* TestTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2225DB7A1747854B002FA1D7 /* TestTextViewController.m */; };
+		2225DB7D17478562002FA1D7 /* TestTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2225DB7C17478562002FA1D7 /* TestTextView.xib */; };
+		2225DB801747873A002FA1D7 /* TestScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2225DB7F1747873A002FA1D7 /* TestScrollViewController.m */; };
+		2225DB821747874B002FA1D7 /* TestScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2225DB811747874B002FA1D7 /* TestScrollView.xib */; };
+		22A5C358174560EC00167F19 /* TestMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A5C357174560EC00167F19 /* TestMapViewController.m */; };
+		22A5C35A174560FF00167F19 /* TestMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22A5C359174560FF00167F19 /* TestMapView.xib */; };
+		22A5C35C174561AB00167F19 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A5C35B174561AB00167F19 /* MapKit.framework */; };
+		22A5C35E1745636600167F19 /* TestWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22A5C35D1745636600167F19 /* TestWebView.xib */; };
+		22A5C3611745637500167F19 /* TestWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A5C3601745637500167F19 /* TestWebViewController.m */; };
+		22F750B01743A17900B0AFDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F750AF1743A17900B0AFDF /* UIKit.framework */; };
+		22F750B21743A17900B0AFDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F750B11743A17900B0AFDF /* Foundation.framework */; };
+		22F750B41743A17900B0AFDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F750B31743A17900B0AFDF /* CoreGraphics.framework */; };
+		22F751831743A53600B0AFDF /* PSSwipeNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F751811743A53600B0AFDF /* PSSwipeNavigationView.m */; };
+		22F7518C1743A5EB00B0AFDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F7518B1743A5EB00B0AFDF /* AppDelegate.m */; };
+		22F751961743A61E00B0AFDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F751901743A61E00B0AFDF /* main.m */; };
+		22F751A71743A66A00B0AFDF /* background-568h@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22F7519C1743A66A00B0AFDF /* background-568h@2x.jpg */; };
+		22F751A81743A66A00B0AFDF /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22F7519D1743A66A00B0AFDF /* background.jpg */; };
+		22F751A91743A66A00B0AFDF /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22F7519E1743A66A00B0AFDF /* background@2x.jpg */; };
+		22F751B91743A69C00B0AFDF /* PSSwipeNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F751B61743A69C00B0AFDF /* PSSwipeNavigationViewController.m */; };
+		22F751FD1743EF6200B0AFDF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F751F81743EF6200B0AFDF /* Default-568h@2x.png */; };
+		22F751FE1743EF6200B0AFDF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F751F91743EF6200B0AFDF /* Default.png */; };
+		22F751FF1743EF6200B0AFDF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F751FA1743EF6200B0AFDF /* Default@2x.png */; };
+		22F7521917440DCF00B0AFDF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F7521817440DCE00B0AFDF /* SystemConfiguration.framework */; };
+		22F7522E1744105500B0AFDF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F7522D1744105500B0AFDF /* QuartzCore.framework */; };
+		22F7524D174418E700B0AFDF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22F7524B174418E700B0AFDF /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2225DB72174773A8002FA1D7 /* PSSwipeNavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PSSwipeNavigationView.xib; sourceTree = "<group>"; };
+		2225DB74174781C1002FA1D7 /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		2225DB75174781C1002FA1D7 /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
+		2225DB77174781DD002FA1D7 /* TestTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableView.xib; sourceTree = "<group>"; };
+		2225DB791747854B002FA1D7 /* TestTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTextViewController.h; sourceTree = "<group>"; };
+		2225DB7A1747854B002FA1D7 /* TestTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTextViewController.m; sourceTree = "<group>"; };
+		2225DB7C17478562002FA1D7 /* TestTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTextView.xib; sourceTree = "<group>"; };
+		2225DB7E1747873A002FA1D7 /* TestScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestScrollViewController.h; sourceTree = "<group>"; };
+		2225DB7F1747873A002FA1D7 /* TestScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestScrollViewController.m; sourceTree = "<group>"; };
+		2225DB811747874B002FA1D7 /* TestScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestScrollView.xib; sourceTree = "<group>"; };
+		22A5C356174560EC00167F19 /* TestMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMapViewController.h; sourceTree = "<group>"; };
+		22A5C357174560EC00167F19 /* TestMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMapViewController.m; sourceTree = "<group>"; };
+		22A5C359174560FF00167F19 /* TestMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestMapView.xib; sourceTree = "<group>"; };
+		22A5C35B174561AB00167F19 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		22A5C35D1745636600167F19 /* TestWebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestWebView.xib; sourceTree = "<group>"; };
+		22A5C35F1745637500167F19 /* TestWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWebViewController.h; sourceTree = "<group>"; };
+		22A5C3601745637500167F19 /* TestWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWebViewController.m; sourceTree = "<group>"; };
+		22F750AC1743A17900B0AFDF /* PSParallaxSwipeNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSParallaxSwipeNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22F750AF1743A17900B0AFDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		22F750B11743A17900B0AFDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		22F750B31743A17900B0AFDF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		22F751801743A53600B0AFDF /* PSSwipeNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSwipeNavigationView.h; sourceTree = "<group>"; };
+		22F751811743A53600B0AFDF /* PSSwipeNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSwipeNavigationView.m; sourceTree = "<group>"; };
+		22F7518A1743A5EB00B0AFDF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PSParallaxSwipeNavigationDemo/AppDelegate.h; sourceTree = "<group>"; };
+		22F7518B1743A5EB00B0AFDF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PSParallaxSwipeNavigationDemo/AppDelegate.m; sourceTree = "<group>"; };
+		22F751901743A61E00B0AFDF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PSParallaxSwipeNavigationDemo/main.m; sourceTree = "<group>"; };
+		22F751911743A61E00B0AFDF /* PSParallaxSwipeNavigationDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "PSParallaxSwipeNavigationDemo-Info.plist"; path = "PSParallaxSwipeNavigationDemo/PSParallaxSwipeNavigationDemo-Info.plist"; sourceTree = "<group>"; };
+		22F751921743A61E00B0AFDF /* PSParallaxSwipeNavigationDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PSParallaxSwipeNavigationDemo-Prefix.pch"; path = "PSParallaxSwipeNavigationDemo/PSParallaxSwipeNavigationDemo-Prefix.pch"; sourceTree = "<group>"; };
+		22F7519C1743A66A00B0AFDF /* background-568h@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background-568h@2x.jpg"; sourceTree = "<group>"; };
+		22F7519D1743A66A00B0AFDF /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		22F7519E1743A66A00B0AFDF /* background@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background@2x.jpg"; sourceTree = "<group>"; };
+		22F751B31743A69C00B0AFDF /* PSSwipeNavigationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSwipeNavigationDelegate.h; sourceTree = "<group>"; };
+		22F751B51743A69C00B0AFDF /* PSSwipeNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSwipeNavigationViewController.h; sourceTree = "<group>"; };
+		22F751B61743A69C00B0AFDF /* PSSwipeNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSwipeNavigationViewController.m; sourceTree = "<group>"; };
+		22F751F81743EF6200B0AFDF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		22F751F91743EF6200B0AFDF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		22F751FA1743EF6200B0AFDF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		22F7521817440DCE00B0AFDF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		22F7522D1744105500B0AFDF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		22F7524C174418E700B0AFDF /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = PSParallaxSwipeNavigationDemo/nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22F750A91743A17900B0AFDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A5C35C174561AB00167F19 /* MapKit.framework in Frameworks */,
+				22F7522E1744105500B0AFDF /* QuartzCore.framework in Frameworks */,
+				22F7521917440DCF00B0AFDF /* SystemConfiguration.framework in Frameworks */,
+				22F750B01743A17900B0AFDF /* UIKit.framework in Frameworks */,
+				22F750B21743A17900B0AFDF /* Foundation.framework in Frameworks */,
+				22F750B41743A17900B0AFDF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22F750A31743A17900B0AFDF = {
+			isa = PBXGroup;
+			children = (
+				22F751851743A54000B0AFDF /* PSParallaxSwipeNavigationDemo */,
+				22F750B51743A17900B0AFDF /* PSParallaxSwipeNavigation */,
+				22F750AE1743A17900B0AFDF /* Frameworks */,
+				22F750AD1743A17900B0AFDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22F750AD1743A17900B0AFDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22F750AC1743A17900B0AFDF /* PSParallaxSwipeNavigation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22F750AE1743A17900B0AFDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22A5C35B174561AB00167F19 /* MapKit.framework */,
+				22F7522D1744105500B0AFDF /* QuartzCore.framework */,
+				22F7521817440DCE00B0AFDF /* SystemConfiguration.framework */,
+				22F750AF1743A17900B0AFDF /* UIKit.framework */,
+				22F750B11743A17900B0AFDF /* Foundation.framework */,
+				22F750B31743A17900B0AFDF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22F750B51743A17900B0AFDF /* PSParallaxSwipeNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				22F751801743A53600B0AFDF /* PSSwipeNavigationView.h */,
+				22F751811743A53600B0AFDF /* PSSwipeNavigationView.m */,
+			);
+			path = PSParallaxSwipeNavigation;
+			sourceTree = "<group>";
+		};
+		22F751851743A54000B0AFDF /* PSParallaxSwipeNavigationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				22F7518A1743A5EB00B0AFDF /* AppDelegate.h */,
+				22F7518B1743A5EB00B0AFDF /* AppDelegate.m */,
+				22F751891743A5D700B0AFDF /* Controllers */,
+				22F751871743A5C900B0AFDF /* Resources */,
+				22F751861743A5BC00B0AFDF /* Supporting Files */,
+				22F751BB1743A8D900B0AFDF /* Views */,
+			);
+			name = PSParallaxSwipeNavigationDemo;
+			sourceTree = "<group>";
+		};
+		22F751861743A5BC00B0AFDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22F751901743A61E00B0AFDF /* main.m */,
+				22F751911743A61E00B0AFDF /* PSParallaxSwipeNavigationDemo-Info.plist */,
+				22F751921743A61E00B0AFDF /* PSParallaxSwipeNavigationDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22F751871743A5C900B0AFDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22F7521617440A7400B0AFDF /* Files */,
+				22F7519B1743A66A00B0AFDF /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		22F751891743A5D700B0AFDF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				22F751B21743A69C00B0AFDF /* Protocols */,
+				22F751B41743A69C00B0AFDF /* ViewControllers */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		22F7519B1743A66A00B0AFDF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				22F751F81743EF6200B0AFDF /* Default-568h@2x.png */,
+				22F751F91743EF6200B0AFDF /* Default.png */,
+				22F751FA1743EF6200B0AFDF /* Default@2x.png */,
+				22F7519C1743A66A00B0AFDF /* background-568h@2x.jpg */,
+				22F7519D1743A66A00B0AFDF /* background.jpg */,
+				22F7519E1743A66A00B0AFDF /* background@2x.jpg */,
+			);
+			name = Images;
+			path = PSParallaxSwipeNavigationDemo/Resources/Images;
+			sourceTree = "<group>";
+		};
+		22F751B21743A69C00B0AFDF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				22F751B31743A69C00B0AFDF /* PSSwipeNavigationDelegate.h */,
+			);
+			name = Protocols;
+			path = PSParallaxSwipeNavigationDemo/Controllers/Protocols;
+			sourceTree = "<group>";
+		};
+		22F751B41743A69C00B0AFDF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				22F751B51743A69C00B0AFDF /* PSSwipeNavigationViewController.h */,
+				22F751B61743A69C00B0AFDF /* PSSwipeNavigationViewController.m */,
+				22A5C356174560EC00167F19 /* TestMapViewController.h */,
+				22A5C357174560EC00167F19 /* TestMapViewController.m */,
+				22A5C35F1745637500167F19 /* TestWebViewController.h */,
+				22A5C3601745637500167F19 /* TestWebViewController.m */,
+				2225DB74174781C1002FA1D7 /* TestTableViewController.h */,
+				2225DB75174781C1002FA1D7 /* TestTableViewController.m */,
+				2225DB791747854B002FA1D7 /* TestTextViewController.h */,
+				2225DB7A1747854B002FA1D7 /* TestTextViewController.m */,
+				2225DB7E1747873A002FA1D7 /* TestScrollViewController.h */,
+				2225DB7F1747873A002FA1D7 /* TestScrollViewController.m */,
+			);
+			name = ViewControllers;
+			path = PSParallaxSwipeNavigationDemo/Controllers/ViewControllers;
+			sourceTree = "<group>";
+		};
+		22F751BB1743A8D900B0AFDF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22F751BC1743A8D900B0AFDF /* Code */,
+				22F751BD1743A8D900B0AFDF /* Xib */,
+			);
+			name = Views;
+			path = PSParallaxSwipeNavigationDemo/Views;
+			sourceTree = "<group>";
+		};
+		22F751BC1743A8D900B0AFDF /* Code */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		22F751BD1743A8D900B0AFDF /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				2225DB72174773A8002FA1D7 /* PSSwipeNavigationView.xib */,
+				22A5C359174560FF00167F19 /* TestMapView.xib */,
+				22A5C35D1745636600167F19 /* TestWebView.xib */,
+				2225DB77174781DD002FA1D7 /* TestTableView.xib */,
+				2225DB7C17478562002FA1D7 /* TestTextView.xib */,
+				2225DB811747874B002FA1D7 /* TestScrollView.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		22F7521617440A7400B0AFDF /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				22F7524B174418E700B0AFDF /* Localizable.strings */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22F750AB1743A17900B0AFDF /* PSParallaxSwipeNavigation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22F750C91743A17900B0AFDF /* Build configuration list for PBXNativeTarget "PSParallaxSwipeNavigation" */;
+			buildPhases = (
+				22F750A81743A17900B0AFDF /* Sources */,
+				22F750A91743A17900B0AFDF /* Frameworks */,
+				22F750AA1743A17900B0AFDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PSParallaxSwipeNavigation;
+			productName = PSParallaxSwipeNavigation;
+			productReference = 22F750AC1743A17900B0AFDF /* PSParallaxSwipeNavigation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22F750A41743A17900B0AFDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Po Sam";
+			};
+			buildConfigurationList = 22F750A71743A17900B0AFDF /* Build configuration list for PBXProject "PSParallaxSwipeNavigation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				nl,
+			);
+			mainGroup = 22F750A31743A17900B0AFDF;
+			productRefGroup = 22F750AD1743A17900B0AFDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22F750AB1743A17900B0AFDF /* PSParallaxSwipeNavigation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22F750AA1743A17900B0AFDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F751A71743A66A00B0AFDF /* background-568h@2x.jpg in Resources */,
+				22F751A81743A66A00B0AFDF /* background.jpg in Resources */,
+				22F751A91743A66A00B0AFDF /* background@2x.jpg in Resources */,
+				22F751FD1743EF6200B0AFDF /* Default-568h@2x.png in Resources */,
+				22F751FE1743EF6200B0AFDF /* Default.png in Resources */,
+				22F751FF1743EF6200B0AFDF /* Default@2x.png in Resources */,
+				22F7524D174418E700B0AFDF /* Localizable.strings in Resources */,
+				22A5C35A174560FF00167F19 /* TestMapView.xib in Resources */,
+				22A5C35E1745636600167F19 /* TestWebView.xib in Resources */,
+				2225DB73174773A8002FA1D7 /* PSSwipeNavigationView.xib in Resources */,
+				2225DB78174781DD002FA1D7 /* TestTableView.xib in Resources */,
+				2225DB7D17478562002FA1D7 /* TestTextView.xib in Resources */,
+				2225DB821747874B002FA1D7 /* TestScrollView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22F750A81743A17900B0AFDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F751831743A53600B0AFDF /* PSSwipeNavigationView.m in Sources */,
+				22F7518C1743A5EB00B0AFDF /* AppDelegate.m in Sources */,
+				22F751961743A61E00B0AFDF /* main.m in Sources */,
+				22F751B91743A69C00B0AFDF /* PSSwipeNavigationViewController.m in Sources */,
+				22A5C358174560EC00167F19 /* TestMapViewController.m in Sources */,
+				22A5C3611745637500167F19 /* TestWebViewController.m in Sources */,
+				2225DB76174781C1002FA1D7 /* TestTableViewController.m in Sources */,
+				2225DB7B1747854B002FA1D7 /* TestTextViewController.m in Sources */,
+				2225DB801747873A002FA1D7 /* TestScrollViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		22F7524B174418E700B0AFDF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22F7524C174418E700B0AFDF /* nl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22F750C71743A17900B0AFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		22F750C81743A17900B0AFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22F750CA1743A17900B0AFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PSParallaxSwipeNavigationDemo/PSParallaxSwipeNavigationDemo-Prefix.pch";
+				INFOPLIST_FILE = "PSParallaxSwipeNavigationDemo/PSParallaxSwipeNavigationDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		22F750CB1743A17900B0AFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PSParallaxSwipeNavigationDemo/PSParallaxSwipeNavigationDemo-Prefix.pch";
+				INFOPLIST_FILE = "PSParallaxSwipeNavigationDemo/PSParallaxSwipeNavigationDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22F750A71743A17900B0AFDF /* Build configuration list for PBXProject "PSParallaxSwipeNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22F750C71743A17900B0AFDF /* Debug */,
+				22F750C81743A17900B0AFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22F750C91743A17900B0AFDF /* Build configuration list for PBXNativeTarget "PSParallaxSwipeNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22F750CA1743A17900B0AFDF /* Debug */,
+				22F750CB1743A17900B0AFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22F750A41743A17900B0AFDF /* Project object */;
+}
