@@ -290,31 +290,6 @@ typedef enum {
     }
 }
 
-- (void)rotateView:(UIView*)view direction:(RotationDirection)direction {
-    CGFloat angle = direction == RotationDirectionLeft ? M_PI : -M_PI;
-    
-    CAKeyframeAnimation *theAnimation = [CAKeyframeAnimation animation];
-    theAnimation.values = [NSArray arrayWithObjects:
-                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation(0, 0,1,0)],
-                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation(angle, 0,1,0)],
-                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation(angle * 2, 0,1,0)],
-                           nil];
-    
-    theAnimation.cumulative = YES;
-    theAnimation.duration = kAnimationDuration;
-    theAnimation.repeatCount = 0;
-    theAnimation.removedOnCompletion = YES;
-    
-    
-    theAnimation.timingFunctions = [NSArray arrayWithObjects:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],
-                                    [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut],
-                                    nil
-                                    ];
-    
-    [view.layer addAnimation:theAnimation forKey:@"transform"];
-}
-
-
 /**
  * Callback method to handle vertical swipe gesture while attempting to exit navigation mode
  */
@@ -416,6 +391,30 @@ typedef enum {
     self.pinchRecognizer.delaysTouchesBegan = YES;
     [self.pinchRecognizer requireGestureRecognizerToFail:self.twoFingerVerticalSwipeRecognizer];
     [self addGestureRecognizer:self.pinchRecognizer];
+}
+
+/**
+ * Method to rotate a view
+ */
+- (void)rotateView:(UIView*)view direction:(RotationDirection)direction {
+    CGFloat angle = direction == RotationDirectionLeft ? M_PI : -M_PI;
+    
+    CAKeyframeAnimation *theAnimation = [CAKeyframeAnimation animation];
+    theAnimation.values = [NSArray arrayWithObjects:
+                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation(0, 0,1,0)],
+                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation(angle, 0,1,0)],
+                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation(angle * 2, 0,1,0)],
+                           nil];
+    
+    theAnimation.duration = kAnimationDuration;
+    theAnimation.repeatCount = 0;
+    
+    theAnimation.timingFunctions = [NSArray arrayWithObjects:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],
+                                    [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut],
+                                    nil
+                                    ];
+    
+    [view.layer addAnimation:theAnimation forKey:@"transform"];
 }
 
 /**
